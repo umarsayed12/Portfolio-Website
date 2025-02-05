@@ -11,11 +11,7 @@ const ContactMeRight = () => {
       viewport={{ once: false, amount: 0 }}
       className="flex flex-col items-center justify-center gap-12"
     >
-      <img
-        src="../../public/images/contact-me.png"
-        alt="email image"
-        className="max-w-[300px]"
-      />
+      <img src="/images/contact-me.png" alt="email" className="max-w-[300px]" />
       <ContactInfo />
       <ContactSocial />
     </motion.div>
