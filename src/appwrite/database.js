@@ -27,7 +27,7 @@ export class Services {
 
   async getProjectImage(featuredImage) {
     try {
-      return await this.Projectbucket.getFilePreview(
+      return await this.Projectbucket.getFileView(
         config.appwriteProjectImagesBucketId,
         featuredImage
       );
