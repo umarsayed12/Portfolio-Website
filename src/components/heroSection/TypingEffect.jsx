@@ -1,11 +1,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
-const words = [
-  "Frontend Web Developer.",
-  "UI Designer.",
-  "Mobile App Developer.",
-];
+const words = ["Full Stack Web Developer.", "UI Designer.", "Content Writer."];
 
 const TypingEffect = () => {
   const [currentWord, setCurrentWord] = useState("");

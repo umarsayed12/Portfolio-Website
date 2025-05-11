@@ -1,40 +1,61 @@
 import React from "react";
+import { Timeline } from "../ui/timeline";
 
-const Education = () => {
-  const education = [
+function Education() {
+  const data = [
     {
-      institute: "G.L Bajaj Institute of Technology and Management",
-      year: "2022-2026",
-      course: "Bachelor of Technology",
+      title: "Nov 2022 – Present",
+      content: (
+        <div>
+          <p className="mb-2 text-md font-normal text-neutral-800 md:text-xl dark:text-neutral-200">
+            <strong>G.L Bajaj Institute of Technology and Management</strong>
+          </p>
+          <p className="mb-4 text-sm font-normal text-neutral-800 md:text-lg dark:text-neutral-400">
+            Bachelor of Technology (B.Tech) in Artificial Intelligence & Machine
+            Learning
+            <br />
+            CGPA: 7.57 (Till Date)
+          </p>
+        </div>
+      ),
     },
     {
-      institute: "Little Flower Sr. Sec. School",
-      year: "2020-2021",
-      course: "Intermediate(10+2)",
+      title: "April 2021",
+      content: (
+        <div>
+          <p className="mb-2 text-md font-normal text-neutral-800 md:text-xl dark:text-neutral-200">
+            <strong>Little Flower Sr. Sec. School</strong>
+          </p>
+          <p className="mb-4 text-sm font-normal text-neutral-700 md:text-lg dark:text-neutral-400">
+            Intermediate (10+2) with PCM
+            <br />
+            Percentage: 77.4%
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: "April 2019",
+      content: (
+        <div>
+          <p className="mb-2 text-md font-normal text-neutral-800 md:text-xl dark:text-neutral-200">
+            <strong>Little Flower Sr. Sec. School</strong>
+          </p>
+          <p className="mb-4 text-sm font-normal text-neutral-700 md:text-lg dark:text-neutral-400">
+            High School (10th)
+            <br />
+            Percentage: 84.6%
+          </p>
+        </div>
+      ),
     },
   ];
 
   return (
-    <div className="flex flex-col gap-4">
-      <h2 className="text-3xl">Education</h2>
-      <ul className="flex flex-col gap-3">
-        {education.map((item, index) => {
-          return (
-            <li key={index} className="text-white flex flex-col">
-              <div className="flex flex-col lg:flex-row lg:justify-between">
-                <h3>{item.institute}</h3>
-                <p className="text-dark_yellow/80">{item.year}</p>
-              </div>
-              <p className="text-white/50">{item.course}</p>
-              {index < education.length - 1 ? (
-                <div className="h-[2px] bg-white/30 w-full mt-3"></div>
-              ) : null}
-            </li>
-          );
-        })}
-      </ul>
+    <div className="relative w-full overflow-clip">
+      <Timeline data={data} />
     </div>
   );
-};
+}
 
 export default Education;

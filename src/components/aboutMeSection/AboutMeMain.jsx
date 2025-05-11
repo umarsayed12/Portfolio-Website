@@ -19,7 +19,7 @@ const AboutMeMain = () => {
         variants={fadeIn("right", 0)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.3 }}
+        viewport={{ once: false, amount: 0.1 }}
         className="flex flex-col lg:gap-5 gap-14"
       >
         <div className="flex flex-col lg:flex-row items-center lg:items-start lg:gap-20">
@@ -34,7 +34,7 @@ const AboutMeMain = () => {
         >
           <Education />
         </motion.div>
-        <button className="border border-white bg-gradient-to-r  from-dark_yellow to-light_yellow rounded-full py-2 px-4 text-lg flex gap-2 items-center mt-10 hover:bg-light_yellow hover:scale-110 transition-all duration-500 cursor-pointer md:self-start sm:self-center">
+        <button className="border border-white bg-gradient-to-r  from-dark_yellow to-light_yellow rounded-full py-2 px-4 text-lg flex gap-2 items-center mt-10 hover:bg-light_yellow hover:scale-110 transition-all duration-500 cursor-pointer md:self-center sm:self-center">
           <Link
             spy={true}
             smooth={true}

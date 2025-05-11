@@ -1,10 +1,10 @@
-import { FaHtml5 } from "react-icons/fa";
+import { FaHtml5, FaNodeJs } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
 import { FaGitAlt } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiPostman } from "react-icons/si";
+import { SiExpress, SiPostman } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -15,6 +15,14 @@ const skills = [
   {
     skill: "ReactJS",
     icon: FaReact,
+  },
+  {
+    skill: "NodeJs",
+    icon: FaNodeJs,
+  },
+  {
+    skill: "Expressjs",
+    icon: SiExpress,
   },
   {
     skill: "JavaScript",
