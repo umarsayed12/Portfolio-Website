@@ -5,6 +5,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FaHashnode } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import SingleContactSocial from "../contactMeSection/SingleContactSocial";
+import { LinkPreview } from "../ui/link-preview";
 const AboutMeText = () => {
   return (
     <div className="flex flex-col text-md max-w-[90%] md:items-start sm:items-center md:text-left sm:text-center">
@@ -31,36 +32,57 @@ const AboutMeText = () => {
       </p>
 
       <div className="flex gap-4 mt-5">
-        <SingleContactSocial
-          link="https://www.linkedin.com/in/umar-khursheed-6a811b22a/"
-          Icon={FaLinkedinIn}
-          bgColor="bg-[#0A66C2]"
-          fill="#fff"
-        />
-        <SingleContactSocial
-          link="https://github.com/umarsayed12/"
-          Icon={FiGithub}
-          bgColor="bg-[#000]"
-          fill="#fff"
-        />
-        <SingleContactSocial
-          link="https://umarkhursheed.hashnode.dev/"
-          Icon={FaHashnode}
-          bgColor="bg-[#fff]"
-          fill="#2962FF"
-        />
-        <SingleContactSocial
-          link="https://leetcode.com/u/umar_khursheed/"
-          Icon={SiLeetcode}
-          bgColor="bg-[#000]"
-          fill="#FF8C00"
-        />
-        <SingleContactSocial
-          link="https://www.instagram.com/umarkhursheed2511/"
-          Icon={FaInstagram}
-          bgColor="bg-gradient-to-r from-[#833ab4] via-[#c13584] via-[#e1306c] via-[#fd1d1d] via-[#f77737] to-[#fcb045]"
-          fill="#fff"
-        />
+        <LinkPreview
+          // url="https://www.linkedin.com/in/umar-khursheed"
+          imageSrc="/images/Linkedin-2.png"
+          isStatic={true}
+          height={325}
+          width={300}
+        >
+          <SingleContactSocial
+            link="https://www.linkedin.com/in/umar-khursheed-6a811b22a/"
+            Icon={FaLinkedinIn}
+            bgColor="bg-[#0A66C2]"
+            fill="#fff"
+          />
+        </LinkPreview>
+        <LinkPreview url="https://github.com/umarsayed12">
+          <SingleContactSocial
+            link="https://github.com/umarsayed12/"
+            Icon={FiGithub}
+            bgColor="bg-[#000]"
+            fill="#fff"
+          />
+        </LinkPreview>
+        <LinkPreview
+          imageSrc="/images/blog.png"
+          isStatic={true}
+          height={300}
+          width={300}
+        >
+          <SingleContactSocial
+            link="https://umarkhursheed.hashnode.dev/"
+            Icon={FaHashnode}
+            bgColor="bg-[#fff]"
+            fill="#2962FF"
+          />
+        </LinkPreview>
+        <LinkPreview url="https://leetcode.com/u/umar_khursheed/">
+          <SingleContactSocial
+            link="https://leetcode.com/u/umar_khursheed/"
+            Icon={SiLeetcode}
+            bgColor="bg-[#000]"
+            fill="#FF8C00"
+          />
+        </LinkPreview>
+        <LinkPreview imageSrc="/images/insta.png" isStatic={true}>
+          <SingleContactSocial
+            link="https://www.instagram.com/umarkhursheed2511/"
+            Icon={FaInstagram}
+            bgColor="bg-gradient-to-r from-[#833ab4] via-[#c13584] via-[#e1306c] via-[#fd1d1d] via-[#f77737] to-[#fcb045]"
+            fill="#fff"
+          />
+        </LinkPreview>
       </div>
       <div className="shadow-whiteShadow absolute top-[5%] left-0 -z-10 opacity-50"></div>
     </div>
