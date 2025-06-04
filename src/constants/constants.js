@@ -4,10 +4,61 @@ import { FaGithub } from "react-icons/fa6";
 import { FaGitAlt } from "react-icons/fa";
 import { TbBrandCpp } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiExpress, SiPostman } from "react-icons/si";
+import { SiExpress, SiPostman, SiMongodb } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
+export const skillsSM = [
+  {
+    skill: "ReactJS",
+    icon: FaReact,
+  },
+  {
+    skill: "NodeJs",
+    icon: FaNodeJs,
+  },
+  {
+    skill: "Expressjs",
+    icon: SiExpress,
+  },
+  {
+    skill: "JavaScript",
+    icon: IoLogoJavascript,
+  },
+  {
+    skill: "HTML",
+    icon: FaHtml5,
+  },
+  {
+    skill: "CSS",
+    icon: FaCss3Alt,
+  },
+  {
+    skill: "Redux",
+    icon: SiRedux,
+  },
+  {
+    skill: "TailwindCSS",
+    icon: RiTailwindCssFill,
+  },
+  {
+    skill: "C++",
+    icon: TbBrandCpp,
+  },
+  {
+    skill: "Git",
+    icon: FaGitAlt,
+  },
+  {
+    skill: "Github",
+    icon: FaGithub,
+  },
+  {
+    skill: "Postman API",
+    icon: SiPostman,
+  },
+];
+
 export const skills = [
   {
     skill: "ReactJS",
@@ -33,6 +84,17 @@ export const skills = [
   {
     skill: "NodeJs",
     icon: FaNodeJs,
+    hoverColor:
+      "hover:bg-gradient-to-r hover:from-green-500 hover:to-green-600",
+  },
+  {
+    skill: "ExpressJs",
+    icon: SiExpress,
+    hoverColor: "hover:bg-gradient-to-r hover:from-gray-800 hover:to-gray-900",
+  },
+  {
+    skill: "MongoDB",
+    icon: SiMongodb,
     hoverColor:
       "hover:bg-gradient-to-r hover:from-green-500 hover:to-green-600",
   },

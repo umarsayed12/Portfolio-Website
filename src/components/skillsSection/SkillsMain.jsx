@@ -13,7 +13,7 @@ const SkillsMain = () => {
           "Programs must be written for people to read, and only incidentally
           for machines to execute." — Harold Abelson
         </p>
-        <div className="bottom-[60px] absolute left-[50%] -translate-x-[50%] sm:hidden lg:block">
+        <div className="absolute pt-6 left-[50%] -translate-x-[50%] sm:hidden lg:block">
           <AllSkills />
         </div>
         <div className="sm:block lg:hidden">

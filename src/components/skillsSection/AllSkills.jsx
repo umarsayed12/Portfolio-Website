@@ -1,30 +1,33 @@
+import React, { useRef, useEffect, useState } from "react";
 import SingleSkill from "./SingleSkill";
-
-import { motion } from "framer-motion";
-import { fadeIn } from "../../framerMotion/variants";
 import { skills } from "../../constants/constants";
+import "./AllSkills.css"; // Ensure this is imported
+
 const AllSkills = () => {
+  const [isHovered, setIsHovered] = useState(false);
+  const containerRef = useRef(null);
+
   return (
-    <div>
-      <div className="flex items-center justify-center relative gap-2 max-w-[1200px] mx-auto">
-        {skills.map((item, index) => {
-          return (
-            <motion.div
-              variants={fadeIn("up", `0.${index}`)}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: false, amount: 0 }}
-              key={index}
-            >
+    <div
+      className="overflow-hidden py-10"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <div className="marquee-wrapper">
+        <div
+          className={`marquee-inner ${isHovered ? "paused" : ""}`}
+          ref={containerRef}
+        >
+          {[...skills, ...skills, ...skills].map((item, index) => (
+            <div key={index} className="marquee-item">
               <SingleSkill
-                key={index}
                 text={item.skill}
                 imgSvg={<item.icon />}
                 hoverColor={item.hoverColor}
               />
-            </motion.div>
-          );
-        })}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
