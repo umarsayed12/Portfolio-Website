@@ -11,8 +11,7 @@ function Education() {
             <strong>G.L Bajaj Institute of Technology and Management</strong>
           </p>
           <p className="mb-4 text-sm font-normal text-neutral-800 md:text-lg dark:text-neutral-400">
-            Bachelor of Technology (B.Tech) in Artificial Intelligence & Machine
-            Learning
+            Bachelor of Technology (B.Tech) in Information Technology
             <br />
             CGPA: 7.57 (Till Date)
           </p>
