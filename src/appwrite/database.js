@@ -22,7 +22,7 @@ export class Services {
         [Query.orderAsc("order")]
       );
     } catch (error) {
-      console.log("Error in Fetching Projects : ", error);
+      console.log("Error in Fetching Project : ", error);
     }
   }
 
