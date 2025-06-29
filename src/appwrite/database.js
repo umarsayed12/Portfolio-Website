@@ -1,4 +1,4 @@
-import { Client, Databases, Storage } from "appwrite";
+import { Client, Databases, Query, Storage } from "appwrite";
 import config from "../config/config";
 export class Services {
   client = new Client();
@@ -18,10 +18,11 @@ export class Services {
     try {
       return await this.databases.listDocuments(
         config.appwriteDatabaseId,
-        config.appwriteProjectCollectionId
+        config.appwriteProjectCollectionId,
+        [Query.orderAsc("order")]
       );
     } catch (error) {
-      console.log("Error in Fetching Project : ", error);
+      console.log("Error in Fetching Projects : ", error);
     }
   }
 
