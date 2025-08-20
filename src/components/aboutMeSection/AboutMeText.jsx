@@ -10,25 +10,29 @@ const AboutMeText = () => {
   return (
     <div className="flex flex-col text-md max-w-[90%] md:items-start sm:items-center md:text-left sm:text-center">
       <p className="text-justify">
-        I am <b>Umar Khursheed</b>, a passionate and skilled full stack web
-        developer with expertise in <b>React.js</b>, <b>TailwindCSS</b>,{" "}
-        <b>Redux Toolkit</b>, and <b>Appwrite</b>. I have a solid foundation in
-        <b>JavaScript</b>, <b>Python</b>, and <b>C++</b>, and have built dynamic
-        applications including
-        <b>Enlighten</b> — a feature-rich blog app with secure authentication,
-        rich text editing, and intuitive UI/UX.
-        <br />I am proficient in <b>Data Structures and Algorithms</b> with 400+
-        problems solved on
-        <b>LeetCode</b> and a <b>4-star rating on HackerRank</b>.
+        I am <b>Umar Khursheed</b>, a passionate full-stack web developer with
+        expertise in <b>MERN</b> stack. With a strong background in{" "}
+        <b>JavaScript</b>, <b>Python</b>, and <b>C++</b>, I love building
+        scalable web applications that combine clean architecture with intuitive{" "}
+        <b>UI/UX design</b>.
+        <br />I have worked on impactful projects like <b>API Buddy</b>, an
+        AI-powered API testing platform, and <b>Enlighten</b>, a feature-rich
+        blogging app with secure authentication and seamless state management.
         <br />
-        As a{" "}
-        <b>Development Team Member of Google Developers Group (GDG) GLBITM</b>,
-        I actively contribute to the developer community and recently organized
-        a workshop on building full-stack AI-integrated applications.
-        <br />I am constantly seeking to enhance user experience through
-        thoughtful <b>UI/UX design</b>
-        and efficient <b>state management</b>. I also enjoy writing{" "}
-        <b>poetry and blogs</b> in my free time.
+        Beyond projects, I actively contribute to <b>open-source</b> through
+        programs like <b>GirlScript Summer of Code</b> and{" "}
+        <b>Social Summer of Code</b>, where I have improved UI/UX, fixed
+        critical issues, and collaborated with developers worldwide. Recognized
+        with a <b>Champion Badge</b> in GSSoC, I continue to grow through
+        community-driven development.
+        <br />I am also proficient in <b>Data Structures and Algorithms</b>,
+        with <b>400+ problems solved on LeetCode</b> and a{" "}
+        <b>4-star rating on HackerRank</b>, which reflects my strong
+        problem-solving mindset.
+        <br />
+        My goal is to craft applications that not only solve real-world problems
+        but also deliver delightful user experiences. Outside of coding, I enjoy
+        writing <b>poetry and blogs</b>, blending creativity with technology.
       </p>
 
       <div className="flex gap-4 mt-5">
