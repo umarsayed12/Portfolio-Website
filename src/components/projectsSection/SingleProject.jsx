@@ -20,7 +20,7 @@ const SingleProject = ({ name, desc, github, align, image, link }) => {
       viewport={{ once: false, amount: 0.2 }}
       className={`flex w-full sm:flex-col-reverse items-start gap-8 ${
         align === "left" ? "md:flex-row" : "md:flex-row-reverse"
-      } justify-end sm:flex-col`}
+      } justify-between sm:flex-col`}
     >
       <div className="flex flex-col gap-2">
         <h2 className="md:text-3xl sm:text-2xl text-orange ">{name}</h2>
